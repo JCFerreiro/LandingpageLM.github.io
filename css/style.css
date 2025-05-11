@@ -168,19 +168,18 @@ img {
     line-height: 1; /* Para que el span no genere mucho espacio vertical */
 }
 
-.tituloBox-hero h2 span { /* Este es el título principal ahora */
-    font-family: var(--font-secondary);
-    font-size: clamp(2.5em, 5.5vw, 4.2em); /* Tamaño principal */
-    font-weight: 600; /* Lora semibold */
-    line-height: 1.3;
-    background-color: var(--color-primary-accent);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: var(--border-radius-main);
-    display: inline; /* O inline-block si se rompe en varias líneas */
-    box-decoration-break: clone; /* Para que el fondo se aplique bien si rompe línea */
-    -webkit-box-decoration-break: clone;
+
+.tituloBox-hero h2 span {
+  font-family: var(--font-secondary);
+  font-size: clamp(3em, 6vw, 5em);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-primary-accent); /* Texto morado */
+  padding: 0; /* Quitamos el padding del fondo */
+  border-radius: 0;
+  background-color: transparent; /* Sin fondo */
 }
+
 
 .tituloBox-hero .descripcion-profesional {
     font-size: 1.15em; /* Texto descriptivo un poco más grande */
